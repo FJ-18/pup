@@ -34,3 +34,44 @@ button {
   width: 70px;
   height: 30px;
 }
+.menu_ul2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.menu_ul2 li {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-right: 2px solid #3d97ac;
+  cursor: pointer;
+}
+.menu_ul2 li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 25px 35px 25px 35px;
+  position: relative;
+}
+
+.menu_ul2 li a:hover {
+  background-color: #348ea2;
+}
+.menu_ul2 li span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 233px;
+  width: 5px;
+  height: 5px;
+  border: 15px solid transparent; /* Прозрачные границы */
+  border-top: 9px solid white;
+}
+.two {
+  margin-right: 35px;
+}
+.star {
+  color: red;
+}
