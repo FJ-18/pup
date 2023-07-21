@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Site 3</title>
+    <style>
+      ul li {
+        list-style-type: none;
+        background-color: gray;
+        display: block;
+        width: 200px;
+        font-size: 24px;
+        margin-bottom: 10px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        color: white;
+        padding: 5px 0;
+        cursor: pointer;
+      }
+      .li {
+        display: none;
+        background-color: rgb(118, 179, 179);
+      }
+      .lis {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Git Site 3</h1>
+      <ul id="ul">
+        <ul>
+          <li onclick="myFn1()">list item 1</li>
+          <li class="li">list item 1.2</li>
+        </ul>
+        <ul>
+          <li onclick="myFn2()">list item 2</li>
+          <li class="li">list item 2.2</li>
+        </ul>
+        <ul>
+          <li onclick="myFn3()">list item 3</li>
+          <li class="li">list item 3.2</li>
+        </ul>
+        <ul>
+          <li onclick="myFn4()">list item 4</li>
+          <li class="li">list item 4.2</li>
+        </ul>
+        <ul>
+          <li onclick="myFn5()">list item 5</li>
+          <li class="li">list item 5.2</li>
+        </ul>
+      </ul>
+    </div>
+    <script>
+      let li = document.querySelectorAll(".li");
+      function myFn1() {
+        li[0].classList.toggle("lis");
+      }
+      function myFn2() {
+        li[1].classList.toggle("lis");
+      }
+      function myFn3() {
+        li[2].classList.toggle("lis");
+      }
+      function myFn4() {
+        li[3].classList.toggle("lis");
+      }
+      function myFn5() {
+        li[4].classList.toggle("lis");
+      }
+    </script>
+  </body>
+</html>
