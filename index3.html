@@ -53,6 +53,9 @@
         </ul>
       </ul>
     </div>
+    <p>X: <span id="x"></span></p>
+    <br />
+    <p>Y: <span id="y"></span></p>
     <script>
       let li = document.querySelectorAll(".li");
       function myFn1() {
@@ -70,6 +73,12 @@
       function myFn5() {
         li[4].classList.toggle("lis");
       }
+      const xSpan = document.getElementById("x");
+      const ySpan = document.getElementById("y");
+      document.addEventListener("mousemove", (event) => {
+        xSpan.textContent = event.clientX;
+        ySpan.textContent = event.clientY;
+      });
     </script>
   </body>
 </html>

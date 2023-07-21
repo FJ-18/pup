@@ -9,5 +9,16 @@
     <div class="wrapper">
       <h1>Git Site 5</h1>
     </div>
+    <p>X: <span id="x"></span></p>
+    <br />
+    <p>Y: <span id="y"></span></p>
+    <script>
+      const xSpan = document.getElementById("x");
+      const ySpan = document.getElementById("y");
+      document.addEventListener("mousemove", (event) => {
+        xSpan.textContent = event.clientX;
+        ySpan.textContent = event.clientY;
+      });
+    </script>
   </body>
 </html>
